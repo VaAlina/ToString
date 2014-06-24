@@ -1,0 +1,22 @@
+ToString 24:06// Doesn`t work.
+========
+
+import java.util.*;
+public class string {
+
+	public static void main(String[]args){
+		Scanner scanner = new Scanner(System.in);
+		
+		String x;
+		int y;
+		double z;
+		
+		x = scanner.nextLine();
+		y = scanner.nextInt();
+		z = scanner.nextDouble();
+		
+		System.out.print(x+" "+ Integer.toString(y)+" "+ Double.toString(z));
+		
+	}
+	
+}
