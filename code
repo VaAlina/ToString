@@ -1,3 +1,90 @@
+ToString_1.4 25.06 With 2 methods. Works.
+========
+
+package toString;
+
+import java.util.*;
+
+public class toString {
+	
+	    private static int sumIt(int...a){
+	    	return a[0]+a[1]+a[2];
+	    
+	    }	
+	    
+	    private static int doJob(int[] a){
+	    	a[0] =+ a[0]+1;	    	
+	    	a[1] =+ a[1]+1;
+	    	a[2] =+ a[2]+1;
+	    	return a[0]+ a[1]+ a[2];
+	    }
+	    
+	    public static void main(String[] args){
+	    	
+	    	int[] a = new int[]{1, 2, 3, 4, 6, 9};
+	    	doJob(a);
+	    	System.out.println(Arrays.toString(a));
+	    	System.out.println(sumIt(a));
+	    }
+   }
+
+
+
+ToString_1.3 25.06 With 1 method. Works.
+========
+package toString;
+
+import java.util.*;
+
+public class toString {
+	    
+	    private static int doJob(int[] a){
+	    	a[0] =+ a[0]+1;	    	
+	    	a[1] =+ a[1]+1;
+	    	a[2] =+ a[2]+1;
+	    	return a[0]+ a[1]+ a[2];
+	    }
+	    
+	    public static void main(String[] args){
+	    	
+	    	int[] a = new int[]{1, 2, 3, 4, 6, 9};
+	    	doJob(a);
+	    	System.out.println(Arrays.toString(a));
+	    	System.out.println(a[0]+a[1]+a[2]);
+	    }
+   }
+
+
+ToString_1.2 25.06 With 2 methods(doesn`t work correctly);
+========
+
+package toString;
+
+import java.util.*;
+
+public class toString {
+	
+	    private static int sumIt(int...a){
+	    	return  a[0]+a[1]+a[2];
+	    
+	    }	
+	    
+	    private static int doJob(int[] a){
+	    	a[0] =+ a[0]+1;	    	
+	    	a[1] =+ a[1]+1;
+	    	a[2] =+ a[2]+1;
+	    	return a[0]+ a[1]+ a[2];
+	    }
+	    
+	    public static void main(String[] args){
+	    	
+	    	int[] a = new int[]{1, 2, 3, 4, 6, 9};
+	    	doJob(a);
+	    	System.out.println(Arrays.toString(a));
+	    	System.out.println(sumIt());
+	    }
+   }
+
 ToString_1.1 25.06
 ========
 
