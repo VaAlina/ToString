@@ -1,4 +1,30 @@
-ToString 24:06// Doesn`t work.
+ToString_1.1 25.06
+========
+
+package toString;
+
+import java.util.*;
+
+public class toString {
+      	public static void main(String[]args){
+			Scanner scanner = new Scanner(System.in);
+
+			String x;
+			int y;
+			double z;
+
+			x = scanner.nextLine();
+			y = scanner.nextInt();
+			z = scanner.nextDouble();
+
+			System.out.print(x+ Integer.toString(y)+ Double.toString(z));
+
+			}
+
+}
+
+
+ToString_1.0 24.06
 ========
 
 import java.util.*;
